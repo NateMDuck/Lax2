@@ -17,7 +17,7 @@ list_goal = [' upper ninety', ' lower ninety', ' nutmeg']
 
 list_side = [' right', ' left']
 
-num_rounds = int(input("Enter a number"))
+num_rounds = 5
 
 for i in range(num_rounds):
 
