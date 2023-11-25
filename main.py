@@ -1,9 +1,14 @@
 import streamlit as st
 
-
-import os
 import random
 import time
+
+from gtts import gTTS
+from io import BytesIO
+sound_file = BytesIO()
+tts = gTTS('Add text-to-speech to your app', lang='en')
+tts.write_to_fp(sound_file)
+st.audio(sound_file)
 
 list_statistics = []
 
@@ -17,7 +22,7 @@ list_goal = [' upper ninety', ' lower ninety', ' nutmeg']
 
 list_side = [' right', ' left']
 
-num_rounds = 5
+num_rounds = st.number_input()
 
 for i in range(num_rounds):
 
@@ -42,8 +47,6 @@ for i in range(num_rounds):
 
 
     time.sleep(1.0)
-
-
 
 chunk_size = 2
 
