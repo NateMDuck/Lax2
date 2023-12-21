@@ -32,7 +32,7 @@ def text_to_speech(text):
     # Play the audio file
     os.system('afplay ' + speech_file)
 
-num_rounds = int(input("Enter a number"))
+#num_rounds = int(input("Enter a number"))
 
 for i in range(num_rounds):
 
