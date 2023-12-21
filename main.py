@@ -34,7 +34,7 @@ def text_to_speech(text):
 
 #num_rounds = int(input("Enter a number"))
 
-for i in range(num_rounds):
+for i in range(2):
 
     move = random.choice(list_side)
     move = move + " " + random.choice(list_moves)
